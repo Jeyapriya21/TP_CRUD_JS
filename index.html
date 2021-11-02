@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container bg-light">
+        <form action="" class="row g-3" >
+            <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control val" placeholder="prénom" id="prenom">
+            </div>
+            <div class="col-md-6">
+                <label for="nom"  class="form-label">Nom</label>
+                <input type="text" class="form-control val" placeholder="nom" id="nom">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control val" placeholder="email" id="email">
+            </div>
+            <div class="col-md-6">
+                <label for="telephone"  class="form-label">Numero de téléphone</label>
+                <input type="text" class="form-control val" placeholder="telephone" id="telephone">
+            </div>
+            <div>
+                <input type="button" value="Ajouter" class="btn btn-secondary" id="addEtud" >
+            </div>
+        </form>
+    </div>
+    <div class="container" id="listEtud">
+        <h1>Liste des étudiants</h1>
+        <table class="table" id="myTable">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email</th>
+                <th scope="col">Téléphone</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
